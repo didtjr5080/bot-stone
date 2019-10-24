@@ -11,7 +11,7 @@ encText = urllib.parse.quote(aa)
 
 
 
-url = "https://openapi.naver.com/v1/search/encyc.xml?query=" + encText + "*" + "&isDisplayAll=false&page=3"# json 결과
+url = "https://openapi.naver.com/v1/search/encyc.xml?query=" + encText + "*" + "&isDisplayAll=false&page="# json 결과
 # url = "https://openapi.naver.com/v1/search/blog.xml?query=" + encText # xml 결과
 request = urllib.request.Request(url)
 request.add_header("X-Naver-Client-Id",client_id)
